@@ -48,7 +48,10 @@ header{
     border-bottom:1px solid #374151;
 }
 
-.logo{
+.logo,
+.logo:visited,
+.logo:hover,
+.logo:focus {
     font-size:1.5rem;
     font-weight:bold;
     color:white;
