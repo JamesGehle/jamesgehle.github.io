@@ -48,18 +48,11 @@ header{
     border-bottom:1px solid #374151;
 }
 
-.logo,
-.logo:link,
-.logo:visited,
-.logo:hover,
-.logo:focus,
-.logo:active {
+.logo {
     font-size:1.5rem;
     font-weight:bold;
     color:white;
     text-decoration:none;
-    cursor:default;
-    pointer-events:none;
 }
 
 nav{
