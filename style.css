@@ -76,6 +76,16 @@ nav a:focus {
     color:#60a5fa;
 }
 
+section a,
+section a:link,
+section a:visited,
+section a:hover,
+section a:focus,
+section a:active {
+    color:white;
+    text-decoration:underline;
+}
+
 nav .nav-btn,
 nav .nav-btn:link,
 nav .nav-btn:visited,
