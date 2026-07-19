@@ -60,22 +60,35 @@ nav{
     gap:25px;
 }
 
-nav a{
+nav a,
+nav a:link,
+nav a:visited,
+nav a:hover,
+nav a:focus,
+nav a:active {
     color:white;
     text-decoration:none;
     transition:.2s;
 }
 
-nav a:hover{
+nav a:hover,
+nav a:focus {
     color:#60a5fa;
 }
 
-nav .nav-btn{
+nav .nav-btn,
+nav .nav-btn:link,
+nav .nav-btn:visited,
+nav .nav-btn:hover,
+nav .nav-btn:focus,
+nav .nav-btn:active {
     color:white;
     font-weight:400;
+    text-decoration:none;
 }
 
-nav .nav-btn:hover{
+nav .nav-btn:hover,
+nav .nav-btn:focus {
     color:#60a5fa;
 }
 
