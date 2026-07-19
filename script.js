@@ -31,26 +31,4 @@ transitionLinks.forEach((link) => {
     });
 });
 
-const skillChips = document.querySelectorAll(".skill-chip");
-const skillDetails = document.getElementById("skillDetails");
-
-if (skillChips.length && skillDetails) {
-    const defaultText = skillDetails.textContent;
-
-    skillChips.forEach((chip) => {
-        const showDetails = () => {
-            skillDetails.textContent = chip.dataset.description || "Hover over a skill to learn more.";
-        };
-
-        const resetDetails = () => {
-            skillDetails.textContent = defaultText;
-        };
-
-        chip.addEventListener("mouseenter", showDetails);
-        chip.addEventListener("focus", showDetails);
-        chip.addEventListener("mouseleave", resetDetails);
-        chip.addEventListener("blur", resetDetails);
-    });
-}
-
 console.log("Portfolio loaded!");
