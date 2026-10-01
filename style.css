@@ -477,6 +477,11 @@ footer {
     margin-bottom:8px;
 }
 
+.h4-space {
+    height: 0rem;
+    margin: 1rem 0;
+}
+
 @media (max-width: 768px) {
     .hero-content,
     .experience-layout,
