@@ -11,33 +11,69 @@
     <header>
         <span class="logo">JG</span>
         <nav>
-            <a href="index.html#top" class="nav-btn">Home</a>
-            <a href="#about"><strong>About</strong></a>
-            <a href="#experience"><strong>Experience</strong></a>
-            <a href="#skills"><strong>Skills</strong></a>
-            <a href="#contact"><strong>Contact</strong></a>
-            <a href="hire.html" class="nav-btn">Hire Me</a>
-            </nav>
+            <a href="index.html#top">Home</a>
+            <a href="index.html#about">About</a>
+            <a href="index.html#experience">Experience</a>
+            <a href="index.html#skills">Skills</a>
+            <a href="index.html#contact">Contact</a>
+            <a href="hire.html">Hire Me</a>
+        </nav>
     </header>
 
     <main class="hire-page">
         <section class="hire-intro">
             <h1>Hire Me</h1>
-            <p>Tell me about your project, and I will reach out with next steps, timing, and pricing information.</p>
+            <p>Tell me about your project and I will reach out with next steps, timing, and pricing information.</p>
         </section>
 
         <section class="hire-grid">
             <div class="form-card">
                 <h2>Project Application</h2>
-                <iframe class="google-form" src="https://docs.google.com/forms/d/e/1FAIpQLSc-Vs7wbZewvjV4hVknSY0yikJxd8kPZ_7ySnmFYEBEbzKkZg/viewform?usp=pp_url&embedded=true" title="Hire James Google Form"></iframe>
+
+                <form
+                    id="hireForm"
+                    action="https://docs.google.com/forms/d/e/1FAIpQLSc-Vs7wbZewvjV4hVknSY0yikJxd8kPZ_7ySnmFYEBEbzKkZg/formResponse"
+                    method="POST"
+                    target="googleFormSubmit"
+                >
+                    <div class="form-group">
+                        <label for="name">Name</label>
+                        <input id="name" name="entry.1373211767" type="text" placeholder="Your name" required>
+                    </div>
+
+                    <div class="form-group">
+                        <label for="email">Email</label>
+                        <input id="email" name="entry.1610361256" type="email" placeholder="you@example.com" required>
+                    </div>
+
+                    <div class="form-group">
+                        <label for="project">Project</label>
+                        <textarea id="project" name="entry.215550332" placeholder="Tell me about the project you would like me to work on..." required></textarea>
+                    </div>
+
+                    <div class="form-group">
+                        <label for="date">Requested Completion Date</label>
+                        <input id="date" name="entry.1441032271" type="date" required>
+                    </div>
+
+                    <button class="submit-btn" type="submit">Submit Application</button>
+
+                    <p id="form-status" class="form-note" role="status" aria-live="polite"></p>
+                </form>
+
+                <iframe
+                    name="googleFormSubmit"
+                    id="googleFormSubmit"
+                    class="hidden-submit-frame"
+                    title="Google Form submission"
+                ></iframe>
             </div>
 
             <div class="info-card">
                 <h2>Hiring Information</h2>
                 <p><strong>Disclaimer:</strong> I am currently focused on building my skills and portfolio, so I will not be charging for my time at this stage.</p><br>
                 <p style="text-decoration: underline;">Please note that I am currently focused on my studies and may have limited time available for projects.</p><br>
-                
-                <p style="margin-top:16px;">After you submit this form, I will contact you in the next 2-3 business days with a more detailed estimate and next steps for making your website or application. I hope to start projects no later than a week after the form is submitted.</p><br>
+                <p style="margin-top:16px;">After you submit this form, I will contact you in the next 2-3 business days with a more detailed estimate and next steps for making your website or application. I hope to get started on your project no later than a week after the form is submitted, however this is not a guarantee.</p><br>
             </div>
         </section>
     </main>
